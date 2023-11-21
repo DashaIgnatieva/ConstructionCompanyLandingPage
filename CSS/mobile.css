@@ -1,0 +1,290 @@
+@media (max-width: 480px) {
+    /* общие настройки для мобильной версии */
+    h2 {
+        font-size: 3.5vh;
+    }
+
+    /* Шапка сайта
+    Строка с контактами */
+    header.conteiner {
+        position: fixed;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    .contacts_line {
+        display: none;
+    }
+
+    /* Настройка навигационного меню */
+    .navigation_menu {
+        height: auto;
+        width: 100%;
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+    }
+
+    /* Настройки логотипа */
+    div.logo {
+        height: 15%;
+        width: 15%;
+    }
+
+    div.logo img {
+        width: 100%;
+        height: 100%;  
+    }
+
+    .company_name {
+        font-size: 0.8rem;
+    }
+
+    nav.header {
+        display: none;
+        z-index: 2;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* телефон и бургер меню */
+    .burger_and_phone {
+        display: flex;
+        align-items: center;
+    }
+
+    /* телефон в мобильной версии в шапке сайта */
+    .contact_indo_mobile_version {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact_indo_mobile_version img {
+        height: 2vh;
+    }
+
+    .contact_indo_mobile_version a {
+        text-decoration: none;
+        font-family: "Roboto_Regular";
+        color: #0c255e;
+        margin: 0 0 0 0.5vw;
+    }
+
+    header div.burger {
+        display: flex;
+        z-index: 2;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        height: 3vh;
+        width: 10vw;
+        margin: 1vh 0 1vh 3vw;
+    }
+    
+    header div.burger span {
+        height: 3px;
+        width: 80%;
+        background-color: #0c255e;
+    }
+
+    header div.burger::before, header div.burger::after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 80%;
+        background-color: #0c255e;
+    }
+
+    header div.burger::before {
+        top: 0%;
+    }
+
+    header div.burger::after {
+        bottom: 0%;
+    }
+
+    /* Анимация крестика в бургер меню
+    header div.burger.active span {
+        transform: scale(0);
+    }
+
+    header div.burger.active::before {
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    header div.burger.active::after {
+        bottom: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    } */
+
+    /* блок с навигационным меню в мобильной версии */
+    .mobile_nav_menu_opened {
+        display: flex;
+        justify-content: center;
+        padding: 5% 0 5% 0;
+        background-color: #0c255e;
+
+        opacity: 0;
+        animation: ani 1s forwards;
+    }
+
+    @keyframes ani {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
+
+    .mobile_nav_menu_opened nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* настройка ссылок в навигационном меню в мобильной версии*/
+    .mobile_nav_menu_opened nav a {
+        color: white;
+        font-family: "Roboto_Regular";
+    }
+
+    /* тело сайта, тег main */
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* общие настройки для всех секций */
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10vh;
+    }
+
+    /* первый экран тег n1 */
+    #n1 div.short_description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #n1 h1 {
+        font-size: 8vh;
+        text-align: center;
+    }
+
+    #n1 div.short_description p {
+        width: 100%;
+        text-align: center;
+        margin: 1.5vh 0 0 0;
+    } 
+
+    /* Второй экран, тег n2 */
+    #n2 div.block_services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #n2 h2 br {
+        display: none;
+    }
+
+    .services_part_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul.services {
+        padding: 0%;
+    }
+
+    .services_part_2 {
+        display: none;
+    }
+
+    /* этапы работы */
+    div.work_order {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .progress {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .progress div.card {
+        margin-bottom: 1vh;
+    }
+
+    .progress div.card h3 {
+        margin: 2px;
+    } 
+
+    /* наши приимущества */
+    section.advantages {
+        height: auto;
+    }
+
+    div.advantages_set {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.advantage {
+        width: auto;
+    }
+
+    div.advantage img {
+        width: 40%;
+    }
+
+
+    /* футер */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information_place {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.contacts {
+        margin-bottom: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.contacts span {
+        text-align: center;
+    }
+
+    div.address img {
+        margin: 0px 4px 0px 0px;
+    }
+
+    /* Настройка ссылок в футере */
+    div.contacts div.link {
+        transition-duration: 0.5s;
+    }
+
+    div.contacts div.link:active {
+        color: #FCB83F;
+        transform: scale(0.9)
+    }
+}

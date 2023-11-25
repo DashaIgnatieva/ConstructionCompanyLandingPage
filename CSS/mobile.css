@@ -2,6 +2,7 @@
     /* общие настройки для мобильной версии */
     h2 {
         font-size: 3.5vh;
+        text-align: center;
     }
 
     /* Шапка сайта
@@ -102,21 +103,6 @@
     header div.burger::after {
         bottom: 0%;
     }
-
-    /* Анимация крестика в бургер меню
-    header div.burger.active span {
-        transform: scale(0);
-    }
-
-    header div.burger.active::before {
-        top: 50%;
-        transform: rotate(-45deg) translate(0, -50%);
-    }
-
-    header div.burger.active::after {
-        bottom: 50%;
-        transform: rotate(45deg) translate(0, 50%);
-    } */
 
     /* блок с навигационным меню в мобильной версии */
     .mobile_nav_menu_opened {
@@ -251,6 +237,27 @@
         width: 40%;
     }
 
+    /*Наши работы*/
+    .photos {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .photos img {
+        width: 100%;
+        margin: 1%;
+    }
+
+    /* Блок о компании */
+    #n4 {
+        height: auto;
+        padding-bottom: 8vh;
+    }
+
+    #n4 h2 {
+        font-size: 3vh;
+    }
 
     /* футер */
     footer {

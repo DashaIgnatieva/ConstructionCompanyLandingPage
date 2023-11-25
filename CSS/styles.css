@@ -172,7 +172,7 @@ h1 span.h1 {
 
 /* Центр сайта, секции, общие настройки */
 section {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     box-sizing: border-box;
     padding-top: 14vh;
@@ -340,8 +340,25 @@ div.advantage img {
     padding-bottom: 1vh;
 }
 
-/* Блок портфолио с каруселью */
+/* Блок портфолио */
+section.portfolio {
+    height: auto;
+}
 
+/* Настройка заголовка */
+.portfolio h2 {
+    text-align: center;
+}
+
+.photos {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.photos img {
+    width: 50%;
+    margin: 1%;
+}
 
 /* Блок о компании */
 #n4 p {
